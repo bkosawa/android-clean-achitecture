@@ -1,1 +1,6 @@
 include ':app'
+include ':home'
+
+// Allows to have the four features modules shown in AS's Android view
+// without an empty "features" module.
+project(":home").projectDir = new File(rootDir, "features/home")
