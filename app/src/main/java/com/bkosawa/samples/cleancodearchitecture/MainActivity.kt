@@ -109,6 +109,7 @@ class MainActivity : AppCompatActivity() {
                 moduleKotlin -> launchActivity(kotlinSampleClassname)
             }
         }
+        finish()
     }
 
     /** Launch an activity by its class name. */
