@@ -2,10 +2,10 @@
 <resources>
     <dimen name="match_constraint">0dp</dimen>
 
-    <dimen name="spacing_xs">2dp</dimen>
-    <dimen name="spacing_s">4dp</dimen>
-    <dimen name="spacing_m">8dp</dimen>
-    <dimen name="spacing_l">16dp</dimen>
-    <dimen name="spacing_xl">22dp</dimen>
-    <dimen name="spacing_xxl">42dp</dimen>
+    <dimen name="keyline_null">0dp</dimen>
+    <dimen name="keyline_0">2dp</dimen>
+    <dimen name="keyline_1">4dp</dimen>
+    <dimen name="keyline_2">8dp</dimen>
+    <dimen name="keyline_4">16dp</dimen>
+    <dimen name="keyline_5">24dp</dimen>
 </resources>

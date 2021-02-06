@@ -7,20 +7,20 @@
         <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
         <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
         <!--selection controls.-->
-        <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryVariant">@color/green_light</item>
-        <item name="colorSecondary">@color/pink</item>
-        <item name="colorSecondaryVariant">@color/pink_dark</item>
+        <item name="colorPrimary">@color/la_guayaba_green_900</item>
+        <item name="colorPrimaryVariant">@color/la_guayaba_green_700</item>
+        <item name="colorSecondary">@color/la_guayaba_pink_300</item>
+        <item name="colorSecondaryVariant">@color/la_guayaba_pink_500</item>
         <!--colorBackground appears behind scrollable content and is used for the default window-->
         <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
         <!--and menus. colorError is used to indicate an error state for components such as-->
         <!--text fields.-->
-        <item name="android:colorBackground">@color/white_50</item>
-        <item name="colorSurface">@color/white_50</item>
-        <item name="colorError">@color/red_600</item>
+        <item name="android:colorBackground">@color/tertiaryColor</item>
+        <item name="colorSurface">@color/tertiaryColor</item>
+        <item name="colorError">@color/la_guayaba_pink_700</item>
         <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
         <!--on which they appear.-->
-        <item name="colorOnPrimary">@color/pink</item>
+        <item name="colorOnPrimary">@color/white_50</item>
         <item name="colorOnSecondary">@color/black_900</item>
         <item name="colorOnBackground">@color/black_900</item>
         <item name="colorOnSurface">@color/black_900</item>
@@ -40,15 +40,11 @@
         <item name="textAppearanceCaption">@style/TextAppearance.MyTheme.Caption</item>
         <item name="textAppearanceOverline">@style/TextAppearance.MyTheme.Overline</item>
         <!--Material shape attributes-->
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent
-        </item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent
-        </item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent
-        </item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
         <!--Component styles-->
-        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert
-        </item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
         <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MyTheme.BottomSheetDialog</item>
         <item name="navigationViewStyle">@style/Widget.MyTheme.NavigationView</item>
         <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
@@ -57,12 +53,14 @@
     <style name="Base.Theme.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor" tools:ignore="NewApi">?attr/colorSurface</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
-        <item name="android:navigationBarColor" tools:ignore="NewApi">
-            ?android:attr/colorBackground
-        </item>
-        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
-            ?attr/colorControlHighlight
-        </item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">?colorPrimary</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">?attr/colorControlHighlight</item>
     </style>
+    <style name="Theme.MyApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MyApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -41,10 +41,29 @@
 
     <!--Color palette-->
 
-    <color name="green">#54603c</color><!--Color primary (dark)-->
-    <color name="green_light">#cec09b</color><!--Color primary (light)-->
-    <color name="pink">#ec8677</color><!--Color primary variant (dark)-->
-    <color name="pink_dark">#954F45</color> <!--Color primary variant (light)-->
+    <color name="la_guayaba_green_900">#54603c</color>
+    <color name="la_guayaba_green_700">#879553</color>
+    <color name="la_guayaba_pink_300">#EC8677</color>
+    <color name="la_guayaba_pink_500">#f66f52</color>
+    <color name="la_guayaba_pink_700">#db5330</color>
+
+<!--    <color name="primaryColor">#54603c</color>-->
+<!--    <color name="primaryLightColor">#818d67</color>-->
+<!--    <color name="primaryDarkColor">#2a3615</color>-->
+
+<!--    <color name="secondaryColor">#ec8677</color>-->
+<!--    <color name="secondaryLightColor">#ffb7a6</color>-->
+<!--    <color name="secondaryDarkColor">#b6574b</color>-->
+
+    <color name="tertiaryColor">#cec09b</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+<!--    <color name="green">#54603c</color>&lt;!&ndash;Color primary (dark)&ndash;&gt;-->
+<!--    <color name="green_light">#cec09b</color>&lt;!&ndash;Color primary (light)&ndash;&gt;-->
+<!--    <color name="pink">#ec8677</color>&lt;!&ndash;Color primary variant (dark)&ndash;&gt;-->
+<!--    <color name="pink_dark">#954F45</color> &lt;!&ndash;Color primary variant (light)&ndash;&gt;-->
 
 <!--    <color name="purple_200">#bb86fc</color> &lt;!&ndash;Color primary (dark)&ndash;&gt;-->
 <!--    <color name="purple_500">#6200ee</color> &lt;!&ndash;Color primary (light)&ndash;&gt;-->

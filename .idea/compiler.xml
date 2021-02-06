@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="Sample_Project_Clean_Architecture.app" target="1.8" />
+      <module name="Sample_Project_Clean_Architecture.details" target="1.8" />
       <module name="Sample_Project_Clean_Architecture.feature.showdata" target="1.8" />
       <module name="Sample_Project_Clean_Architecture.home" target="1.8" />
     </bytecodeTargetLevel>

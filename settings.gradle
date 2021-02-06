@@ -1,12 +1,14 @@
 rootProject.name = "Sample Project Clean Architecture"
 include ':app'
 include ':home'
-include ':home-usecases'
-include ':home-entity'
+include ':home-domain'
+include ':home-data'
+include ':details'
 
 // Allows to have the four features modules shown in AS's Android view
 // without an empty "features" module.
 project(":home").projectDir = new File(rootDir, "features/home")
+project(":details").projectDir = new File(rootDir, "features/details")
 
-project(":home-usecases").projectDir = new File(rootDir, "modules/home-usecases")
-project(":home-entity").projectDir = new File(rootDir, "modules/home-entity")
+project(":home-domain").projectDir = new File(rootDir, "modules/home-domain")
+project(":home-data").projectDir = new File(rootDir, "modules/home-data")

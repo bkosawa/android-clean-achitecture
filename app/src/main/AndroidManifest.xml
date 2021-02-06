@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bkosawa.samples.cleancodearchitecture">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.google.android.play.core.splitcompat.SplitCompatApplication"
         android:allowBackup="true"
