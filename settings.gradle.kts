@@ -1,5 +1,6 @@
 listOf(
-    ":base"
+    ":base",
+    ":framework:network"
 ).forEach {
     include(it)
 }

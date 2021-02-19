@@ -46,6 +46,24 @@ object AnnotationsDependencies {
     val values = listOf(javaxAnnotation)
 }
 
+object Network : Dependency {
+    private const val okHttpLibrary = "3.12.0"
+    private const val retrofitLibrary = "2.5.0"
+    private const val kotlinSerializationConverterLibrary = "0.7.0"
+
+    private const val okHttp = "com.squareup.okhttp3:okhttp:$okHttpLibrary"
+    private const val okHttpLogging = "com.squareup.okhttp3:logging-interceptor:$okHttpLibrary"
+    const val retrofit = "com.squareup.retrofit2:retrofit:${retrofitLibrary}"
+    private const val kotlinSerializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$kotlinSerializationConverterLibrary"
+
+    override val values = listOf(
+        okHttp,
+        okHttpLogging,
+        retrofit,
+        kotlinSerializationConverter
+    )
+}
+
 fun using(dependency: Dependency, import: (String) -> Unit) {
     dependency.values.forEach { import.invoke(it) }
 }
