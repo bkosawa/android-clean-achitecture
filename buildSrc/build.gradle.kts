@@ -11,6 +11,10 @@ gradlePlugin {
             id = "application-module-plugin"
             implementationClass = "com.bkosawa.gradle.ApplicationModulePlugin"
         }
+        register("library-module-plugin") {
+            id = "library-module-plugin"
+            implementationClass = "com.bkosawa.gradle.LibraryModulePlugin"
+        }
     }
 }
 
