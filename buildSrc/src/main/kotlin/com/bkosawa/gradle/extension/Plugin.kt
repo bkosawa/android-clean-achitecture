@@ -19,9 +19,19 @@ internal fun Project.applyAndroidLibraryPlugins() {
     }
 }
 
+internal fun Project.applyAndroidDynamicFeaturePlugins() {
+    apply {
+        androidDynamicFeaturePlugin()
+        kotlinAndroidPlugin()
+        kotlinKaptPlugin()
+    }
+}
+
 private fun ObjectConfigurationAction.androidApplicationPlugin() = plugin("com.android.application")
 
 private fun ObjectConfigurationAction.androidLibraryPlugin() = plugin("com.android.library")
+
+private fun ObjectConfigurationAction.androidDynamicFeaturePlugin() = plugin("com.android.dynamic-feature")
 
 private fun ObjectConfigurationAction.kotlinAndroidPlugin() = plugin("kotlin-android")
 

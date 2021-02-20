@@ -1,5 +1,3 @@
-import org.gradle.kotlin.dsl.`kotlin-dsl`
-
 plugins {
     `java-gradle-plugin`
     `kotlin-dsl`
@@ -14,6 +12,10 @@ gradlePlugin {
         register("library-module-plugin") {
             id = "library-module-plugin"
             implementationClass = "com.bkosawa.gradle.LibraryModulePlugin"
+        }
+        register("feature-module-plugin") {
+            id = "feature-module-plugin"
+            implementationClass = "com.bkosawa.gradle.FeatureModulePlugin"
         }
     }
 }
