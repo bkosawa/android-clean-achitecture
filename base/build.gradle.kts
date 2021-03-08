@@ -1,6 +1,7 @@
 plugins {
     id("application-module-plugin")
     id("kotlin-android")
+    id("kotlinx-serialization")
 }
 dependencies {
     implementation(project(":framework:network"))

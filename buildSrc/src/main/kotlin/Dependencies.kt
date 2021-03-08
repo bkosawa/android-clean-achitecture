@@ -6,13 +6,18 @@ object BuildPlugins {
     private const val androidGradlePluginVersion = "4.1.2"
     const val androidGradlePlugin = "com.android.tools.build:gradle:${androidGradlePluginVersion}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.version}"
+    const val kotlinSerializiationPlugin = "org.jetbrains.kotlin:kotlin-serialization:${Kotlin.version}"
 }
 
 object Kotlin : Dependency {
     const val version = "1.4.30"
     private const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version}"
+    private const val kotlinxSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0"
 
-    override val values = listOf(kotlinStdlib)
+    override val values = listOf(
+        kotlinStdlib,
+        kotlinxSerialization
+    )
 }
 
 object AndroidX : Dependency {
