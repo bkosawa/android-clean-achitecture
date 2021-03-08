@@ -2,6 +2,7 @@ package com.bkosawa.gradle
 
 import com.bkosawa.gradle.extension.applyAndroidBasicConfiguration
 import com.bkosawa.gradle.extension.applyAndroidDynamicFeaturePlugins
+import com.bkosawa.gradle.extension.applyDaggerDependencies
 import com.bkosawa.gradle.extension.applyKotlinConfiguration
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -19,6 +20,7 @@ class FeatureModulePlugin : Plugin<Project> {
                 }
             }
             applyKotlinConfiguration()
+            applyDaggerDependencies()
         }
     }
 

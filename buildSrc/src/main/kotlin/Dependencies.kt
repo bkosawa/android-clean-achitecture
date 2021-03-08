@@ -24,6 +24,28 @@ object AndroidX : Dependency {
     override val values = listOf(androidxKtx, androidCompat, material, constraintLayout)
 }
 
+object Dagger : Dependency {
+    internal const val daggerLibrary = "2.32"
+    private const val dagger = "com.google.dagger:dagger:${daggerLibrary}"
+    private const val daggerAndroidSupport = "com.google.dagger:dagger-android-support:${daggerLibrary}"
+
+    override val values = listOf(dagger, daggerAndroidSupport)
+}
+
+object DaggerCompiler : Dependency {
+    private const val dagger = "com.google.dagger:dagger-compiler:${Dagger.daggerLibrary}"
+    private const val daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:${Dagger.daggerLibrary}"
+
+    override val values = listOf(dagger, daggerAndroidProcessor)
+}
+
+object AnnotationsDependencies {
+    private const val javaxAnnotationLibrary = "1.0"
+    private const val javaxAnnotation = "javax.annotation:jsr250-api:$javaxAnnotationLibrary"
+
+    val values = listOf(javaxAnnotation)
+}
+
 fun using(dependency: Dependency, import: (String) -> Unit) {
     dependency.values.forEach { import.invoke(it) }
 }
